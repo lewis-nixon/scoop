@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/lowercase78/V2RayN-PRO/releases/download/$version/v2rayN-Pro.zip"
+                "url": "https://github.com/lowercase78/V2RayN-PRO/releases/download/V2RayN-PROV$version/v2rayN-Pro.zip"
             }
         }
     },
