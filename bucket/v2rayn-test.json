@@ -10,11 +10,15 @@
             "hash": "d2b844260698aa899cf0472c43d084f6c8209335739941cb8a410ef70f784b00"
         }
     },
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/lowercase78/4test/releases",
+        "jsonpath": "$.[0].tag_name",
+        "regex": "([\\d.]+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/lowercase78/V2RayN-PRO/releases/download/$version/v2rayN-Pro.zip"
+                "url": "https://github.com/lowercase78/4test/releases/download/$version/v2rayN-Pro.zip"
             }
         }
     },
