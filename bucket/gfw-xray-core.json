@@ -1,0 +1,27 @@
+{
+    "version": "v1.25.2-mahsa-r1",
+    "description": "customized Xray-core for MahsaNG.",
+    "homepage": "https://github.com/GFW-knocker/Xray-core",
+    "license": "MPL-2.0",
+    "notes": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/GFW-knocker/Xray-core/releases/download/v1.25.2-mahsa-r1/Xray-windows-64.zip",
+            "hash": "BEB84D069E9FADCB586ADF6D18A5225F82A42E18D643CD8EDCC886B8E063F6A0"
+        }
+    },
+    "checkver": {
+        "url": "https://api.github.com/repos/GFW-knocker/Xray-core/releases",
+        "jsonpath": "$.[0].tag_name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/GFW-knocker/Xray-core/releases/download/v$version/Xray-windows-64.zip"
+            }
+        }
+    },
+    "pre_install": "if (!(Test-Path \"$persist_dir\\$config.json\")) { New-Item \"$dir\\config.json\" }",
+    "persist": "config.json",
+    "bin": "xray.exe"
+}
